@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <img alt="Version" src="https://img.shields.io/badge/version-0.0.0-blue" />
+  <img alt="Version" src="https://img.shields.io/badge/version-0.7.5-blue" />
   <img alt="Power BI API" src="https://img.shields.io/badge/Power%20BI%20API-5.11-orange" />
   <img alt="License" src="https://img.shields.io/badge/license-MIT%20with%20Commons%20Clause-green" />
 </p>
