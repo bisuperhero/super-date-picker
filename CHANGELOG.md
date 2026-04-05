@@ -1,5 +1,8 @@
 # Changelog
 
+## [0.8.0] - 2026-04-05
+
+Let's beta test
 ## [0.7.5] - 2026-04-05
 
 Initial commit for beta testing
