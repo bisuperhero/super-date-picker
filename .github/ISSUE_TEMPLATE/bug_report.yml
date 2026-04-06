@@ -1,0 +1,62 @@
+name: "Bug report"
+description: "Report a problem with SuperDatePicker"
+labels: ["bug"]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: SuperDatePicker version
+      placeholder: "e.g. 0.8.0"
+    validations:
+      required: true
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Environment
+      options:
+        - Power BI Desktop
+        - Power BI Service (cloud)
+        - Both
+    validations:
+      required: true
+  - type: input
+    id: pbi_version
+    attributes:
+      label: Power BI Desktop version (if applicable)
+      placeholder: "e.g. 2.140.1052.0 (March 2026)"
+  - type: dropdown
+    id: calendar_mode
+    attributes:
+      label: Calendar mode
+      options:
+        - Single Date Picker
+        - Date Range Picker
+        - Mini Calendar
+        - All modes
+        - Not sure
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: "Describe the bug clearly. What did you expect to happen vs. what actually happened?"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: "How can we reproduce this issue?"
+      placeholder: |
+        1. Add SuperDatePicker to a report
+        2. Set calendar mode to ...
+        3. Click on ...
+        4. See error
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots (optional)
+      description: "Drag & drop any relevant screenshots here."

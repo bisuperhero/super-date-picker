@@ -1,0 +1,47 @@
+name: "Translation submission"
+description: "Submit a translation for SuperDatePicker"
+title: "Translation: [language name]"
+labels: ["translation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping translate SuperDatePicker! Please fill in the details below and attach your completed translation file.
+  - type: input
+    id: language
+    attributes:
+      label: Language
+      description: "Which language did you translate to?"
+      placeholder: "e.g. German (Deutsch)"
+    validations:
+      required: true
+  - type: input
+    id: locale
+    attributes:
+      label: Power BI locale code
+      description: "The locale code used by Power BI (e.g. de-DE, fr-FR, ja-JP)"
+      placeholder: "e.g. de-DE"
+    validations:
+      required: true
+  - type: dropdown
+    id: completeness
+    attributes:
+      label: Translation completeness
+      options:
+        - "Complete (all strings translated)"
+        - "Partial (some strings still missing)"
+    validations:
+      required: true
+  - type: textarea
+    id: file
+    attributes:
+      label: Translation file
+      description: "Attach your completed CSV file here (drag & drop or click to upload), or paste the content directly."
+      placeholder: "Drag & drop your CSV file here, or paste the translated content"
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes (optional)
+      description: "Anything we should know about this translation? Alternative phrasings, regional variants, etc."

@@ -10,13 +10,13 @@
 </p>
 
 <p align="center">
-  <img alt="Version" src="https://img.shields.io/badge/version-0.8.0-blue" />
+  <a href="../../releases/latest"><img alt="Version" src="https://img.shields.io/github/v/release/bisuperhero/super-date-picker?label=version&color=blue" /></a>
   <img alt="Power BI API" src="https://img.shields.io/badge/Power%20BI%20API-5.11-orange" />
   <img alt="License" src="https://img.shields.io/badge/license-MIT%20with%20Commons%20Clause-green" />
 </p>
 
 <p align="center">
-  <a href="https://www.superdatepicker.com"><strong>Website</strong></a> &middot;
+  <a href="https://www.superdatepicker.com"><strong>Documentation</strong></a> &middot;
   <a href="../../releases/latest"><strong>Download</strong></a> &middot;
   <a href="../../issues"><strong>Report a Bug</strong></a>
 </p>
@@ -62,6 +62,50 @@ Download the latest `.pbiviz` file from the [Releases page](../../releases/lates
 
 *Coming soon.*
 
+## ⚙️ Configuration Options
+
+All settings are available in the **Format pane** in Power BI.
+
+### Calendar modes
+
+| Mode | Description |
+|------|-------------|
+| **Single Date Picker** | Click to open a calendar dialog, select one date |
+| **Date Range Picker** | Dialog with start/end date selection and preset ranges |
+| **Mini Calendar** | Inline calendar rendered directly on the canvas — no dialog |
+
+### Date range presets
+
+Available presets for the Date Range Picker (each can be shown or hidden individually):
+
+Today, Yesterday, This week, Previous week, This month, Previous month, This year, Previous year, Days up to today (custom count), Days starting today (custom count)
+
+Preset panel position (top/bottom), alignment (left/center/right), and selected-state colors are configurable.
+
+### Theming
+
+Every visual element is customizable:
+
+- **Header** — background color, font color, font size
+- **Calendar body** — background, font, weekday and weekend row colors
+- **Navigation arrows** — arrow type, colors, hover colors (month and year separately)
+- **Today button** — color, font size, uppercase, spacing
+- **Selection** — selected day colors, range fill color, today accent, disabled day color
+- **Hover** — background and text color
+- **Dialog** — background, divider, input field colors, custom width and height
+- **Buttons** — OK and Cancel with separate background and font colors
+- **Input box** — font, colors, border width/radius, calendar icon (show/hide, color, size, multiple icon variants)
+- **Cell layout** — cell width, height, row gap
+- **Border** — color and width
+- **Font** — family and size
+
+### Other settings
+
+- **First day of the week** — configurable (Monday, Sunday, etc.)
+- **Configuration transfer** — export all settings as JSON, import into another visual
+- **High-contrast mode** — automatic support
+- **Localization** — respects Power BI locale for date formatting and weekday names
+
 ## 📋 Requirements
 
 - Power BI Desktop (November 2023 or later) or Power BI Service
@@ -89,6 +133,87 @@ Yes. Import the `.pbiviz` file into your report in Power BI Desktop, then publis
 Not yet. Certification is on the roadmap. The visual follows Microsoft's certification requirements and does not make any external network calls.
 
 </details>
+
+## ⚠️ Known Limitations
+
+This is a **beta release** — the visual is functional but still being refined.
+
+- Some advanced theming options may have edge cases or require fine-tuning
+- Missing translations beyond English and Czech (help translating is welcome!)
+- Not yet certified by Microsoft (certification is planned — the visual already follows certification requirements and makes no external network calls)
+
+Found a bug? [Open an issue](../../issues/new?template=bug_report.yml) — feedback during beta is especially valuable.
+
+## 🗺️ Roadmap
+
+- [ ] Finalize features and theming options based on beta feedback
+- [ ] Microsoft AppSource certification
+- [ ] More built-in translations (see [Help Translate](#-help-translate-superdatepicker) below)
+
+
+Have an idea? [Request a feature](../../issues/new?template=feature_request.yml).
+
+## 🌍 Help Translate SuperDatePicker
+
+SuperDatePicker currently supports **English** and **Czech**. Power BI supports 44 languages — help us cover more!
+
+### How to contribute a translation
+
+1. **Download** the [translation template](translations/translation-template.csv) (CSV — opens in Excel, Google Sheets, or any text editor)
+2. **Fill in** the `your_translation` column with your language
+3. **Submit** your translation by [opening an issue](../../issues/new?template=translation.yml) and attaching the file
+
+No coding or GitHub experience needed — just fill in the spreadsheet and upload it.
+
+### Translation progress (2/43 completed)
+
+| Language | Status |
+|----------|--------|
+| English | ✅ Done |
+| Czech (čeština) | ✅ Done |
+| German (Deutsch) | Needed |
+| Spanish (español) | Needed |
+| French (français) | Needed |
+| Italian (italiano) | Needed |
+| Japanese (日本語) | Needed |
+| Korean (한국어) | Needed |
+| Polish (Polski) | Needed |
+| Portuguese - Brazil (Português) | Needed |
+| Chinese - Simplified (中文简体) | Needed |
+| Chinese - Traditional (中文繁體) | Needed |
+| Dutch (Nederlands) | Needed |
+| Turkish (Türkçe) | Needed |
+| Swedish (svenska) | Needed |
+| Danish (dansk) | Needed |
+| Norwegian (norsk) | Needed |
+| Finnish (suomi) | Needed |
+| Hungarian (magyar) | Needed |
+| Romanian (română) | Needed |
+| Slovak (slovenčina) | Needed |
+| Croatian (hrvatski) | Needed |
+| Bulgarian (Български) | Needed |
+| Ukrainian (українська) | Needed |
+| Greek (Ελληνικά) | Needed |
+| Thai (ไทย) | Needed |
+| Vietnamese (Tiếng Việt) | Needed |
+| Indonesian (Bahasa Indonesia) | Needed |
+| Malay (Bahasa Melayu) | Needed |
+| Hindi (हिंदी) | Needed |
+| Arabic | Needed |
+| Hebrew (עברית) | Needed |
+| Catalan (català) | Needed |
+| Basque | Needed |
+| Galician (galego) | Needed |
+| Estonian (eesti) | Needed |
+| Latvian (latviešu) | Needed |
+| Lithuanian (lietuvių) | Needed |
+| Kazakh (Қазақ) | Needed |
+| Serbian - Cyrillic (српски) | Needed |
+| Serbian - Latin (srpski) | Needed |
+| Slovenian (slovenski) | Needed |
+| Portuguese - Portugal (português) | Needed |
+
+> Full list of [Power BI supported languages](https://learn.microsoft.com/en-us/power-bi/fundamentals/supported-languages-countries-regions)
 
 ## 💬 Support & Contributing
 
