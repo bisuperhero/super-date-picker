@@ -1,5 +1,8 @@
 # Changelog
 
+## [0.8.1] - 2026-04-06
+
+Dialog height increased by 10px to better reflect the default design.
 All notable changes to SuperDatePicker are documented here.
 Each release is also available as a [GitHub Release](../../releases) with the `.pbiviz` file attached.
 
