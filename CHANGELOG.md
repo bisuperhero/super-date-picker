@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.10.0] - 2026-04-10
+
+
+### Features
+
+- Enhance date picker with custom presets
+
+### Chores
+
+- Add .worktrees to .gitignore
+- Add project configuration and gitignore
 ## [0.9.0] - 2026-04-10
 
 
